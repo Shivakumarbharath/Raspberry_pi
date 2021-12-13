@@ -1,0 +1,29 @@
+Servos are controllled using PWM signals 
+
+Servo colour code
+red=+ve
+brown=-ve
+orange=pwm
+
+servis like to sww a 50 hz Control signal 
+
+The position of the Servo depends on the Pulse Width of the on Part of the cycle
+Most Servos are fully left with around a 1msec pulsewidth 
+
+most servos are in the middle postion with a 1.5 msec pulse width are in Fully right position
+
+Math 
+Period= 1/frequency 
+
+cor 50 hz the period of the signal is 
+Period =1/frequency=1/50 =0.2 =20 milli seconds
+
+
+
+To be in the full left Position, we would want a pulse width of 1 ms . ms 
+want a would be a Dutycycle of 0.5x20ms wolud be equal to 1ms
+.So for fulll left would want a a Dutycycle of 5% on a 50hz signal
+
+
+
+for 50hz full left is 5%of Dutycycle center position is 7.5% and full right is 10% duty cycle 
