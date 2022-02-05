@@ -213,7 +213,7 @@ try:
  #       send_message(["The Server has been Started","",""]+default_message)
     while(1):
 
-        if (new_chat_available() or new_message_available()):
+        if (new_chat_available()): # or new_message_available()):
             print("New chat or message is available")
             incoming_message = read_last_message() #read the last message that we received
             print("Message Recieved -",incoming_message)
